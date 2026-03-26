@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" href="/css/styles.css">
-    <title>My App</title>
+    <title>My Calendar</title>
 </head>
 <body>
 
@@ -10,18 +10,18 @@
 <div class="table_component" role="region" tabindex="0">
 <table>
     <caption>
-        <p><br></p>
+        <p id="loading">Loading...</p>
     </caption>
     <thead>
         <tr>
             <th>Sport</th>
             <th>Competition</th>
             <th>Stage</th>
-            <th>Date</th>
+            <th>Kickoff time</th>
             <th>Team 1</th>
             <th>Score</th>
             <th>Team 2</th>
-            <th>Stadium</th>
+            <th>Venue</th>
         </tr>
     </thead>
     <tbody id="table_rows">
