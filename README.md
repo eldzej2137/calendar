@@ -51,3 +51,8 @@ If you prefer to run locally without Docker:
 - **Template Engine:** Thymeleaf
 - **Build Tool:** Maven
 - **Containerization:** Docker
+
+## Some important project decisions
+
+- The data on the main page is retrieved using an SQL query (as defined in *EventRepository*), which maps to a list of *EventProjection* instances including only the relevant informations.
+- The *EventController* has API GET endpoints for retrieving a list of all events or a single event by id, both as full *Event* objects (with all the data from the database) and as *EventProjections* (with only the data that should be displayed). There is also a POST endpoint to add an event to the database.
